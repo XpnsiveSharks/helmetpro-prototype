@@ -32,11 +32,19 @@ const HeroSection = () => {
         <p className={`text-sm md:text-xl sm:text-2xl ${tokens.colors.muted} max-w-xl mx-auto mb-10 leading-relaxed`}>
           Automated helmet cleaning vending machines
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="primary" size="md">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
+          <Button
+            variant="primary"
+            size="sm"
+            className="w-full sm:w-auto sm:px-6 sm:py-3 sm:text-sm sm:tracking-wide"
+          >
             Get Pricing
-          </Button>
-          <Button variant="secondary" size="md">
+          </Button> 
+          <Button
+            variant="secondary"
+            size="sm"
+            className="w-full sm:w-auto sm:[&>span:last-child]:text-sm sm:[&>span:last-child]:tracking-wide"
+          >
             Estimate ROI
           </Button>
         </div>

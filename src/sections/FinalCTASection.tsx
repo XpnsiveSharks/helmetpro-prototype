@@ -13,11 +13,10 @@ const FinalCTASection = () => {
           <Button
             variant="primary"
             size="sm"
-            className="hover:scale-[1.02] shadow-[0_0_30px_rgba(37,99,235,0.4)]"
           >
             Get Pricing
           </Button>
-          <Button variant="ghost" size="sm">
+          <Button variant="secondary" size="sm">
             Contact Sales
           </Button>
         </div>
