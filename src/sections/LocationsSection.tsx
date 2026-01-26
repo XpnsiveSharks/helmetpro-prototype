@@ -1,27 +1,29 @@
-import { locations } from '../data/locations'
-import { tokens } from '../styles/tokens'
-import Container from '../components/Container'
+import { locations } from "../data/locations";
+import { tokens } from "../styles/tokens";
+import Container from "../components/Container";
 
 const LocationsSection = () => {
   return (
     <section id="model" className="xl:pt-24 xl:pb-16 pt-24 pb-16 relative z-10">
       <Container>
         <div className="text-center md:text-left mb-10">
-          <h2 className={`${tokens.typeScale.h2} ${tokens.fonts.heading} text-white mb-1 reveal-on-scroll`}>
+          <h2
+            className={`${tokens.typeScale.h2} ${tokens.fonts.heading} text-white mb-1 reveal-on-scroll`}
+          >
             Designed for high traffic.
           </h2>
-          <p className="text-[10px] uppercase tracking-widest text-zinc-500 reveal-on-scroll font-medium">
+          <p className={`${tokens.typeScale.body} text-neutral-500`}>
             Where HelmetPro units perform best.
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 h-[340px] w-full reveal-on-scroll">
+        <div className="flex flex-col md:flex-row gap-4 w-full md:h-[340px] reveal-on-scroll">
           {locations.map((location) => {
-            const Icon = location.icon
+            const Icon = location.icon;
             return (
               <article
                 key={location.label}
-                className="card group relative w-full md:flex-1 min-w-0 overflow-hidden transition-all duration-500 ease-out bg-neutral-900 border border-white/10 rounded-2xl hover:grow-[1.5] hover:flex-[1.5]"
+                className="card group relative w-full md:flex-1 min-h-[240px] md:min-h-0 min-w-0 overflow-hidden transition-all duration-500 ease-out bg-neutral-900 border border-white/10 rounded-2xl hover:grow-[1.5] hover:flex-[1.5]"
               >
                 <img
                   src={location.image}
@@ -34,18 +36,20 @@ const LocationsSection = () => {
                     <div className="opacity-65 text-white">
                       <Icon size={18} />
                     </div>
-                    <span className={`text-[10px] font-semibold ${tokens.fonts.heading} text-white/90 tracking-widest uppercase`}>
+                    <span
+                      className={`${tokens.typeScale.label} ${tokens.fonts.heading} font-semibold text-white/90`}
+                    >
                       {location.label}
                     </span>
                   </div>
                 </div>
               </article>
-            )
+            );
           })}
         </div>
       </Container>
     </section>
-  )
-}
+  );
+};
 
-export default LocationsSection
+export default LocationsSection;

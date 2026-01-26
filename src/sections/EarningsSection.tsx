@@ -12,7 +12,7 @@ const EarningsSection = () => {
           </h2>
           <div className="flex items-center gap-4">
             <div className="h-px w-12 bg-white/10" />
-            <p className="text-neutral-500 text-[10px] uppercase tracking-widest">
+            <p className={`${tokens.typeScale.body} text-neutral-500`}>
               3-step automated revenue flow
             </p>
             <div className="h-px w-12 bg-white/10" />
@@ -49,7 +49,7 @@ const EarningsSection = () => {
                   >
                     {step.title}
                   </h3>
-                  <p className={`${tokens.typeScale.body} text-neutral-500 font-light group-hover:text-neutral-400`}>
+                  <p className={`${tokens.typeScale.label} text-neutral-500 font-semibold group-hover:text-neutral-400`}>
                     {step.description}
                   </p>
                 </div>
@@ -58,7 +58,7 @@ const EarningsSection = () => {
           })}
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-6 w-full border-t border-white/5 pt-8 px-12 reveal-on-scroll">
+        <div className="flex flex-row items-center justify-between w-full border-t border-white/5 pt-8 px-2 md:px-12 reveal-on-scroll gap-2 md:gap-6">
           <div className="timeline-item flex items-center w-full px-1 group cursor-pointer">
             <span className="text-[10px] font-medium text-neutral-500 uppercase tracking-widest group-hover:text-white transition-colors whitespace-nowrap">Install</span>
             <div className="step-link"><span className="step-link__line"></span><span className="step-link__arrow"><span></span><span></span></span></div>

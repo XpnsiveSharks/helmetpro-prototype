@@ -15,7 +15,7 @@ const FrictionSection = () => {
           <h2 className={`${tokens.typeScale.h2} ${tokens.fonts.heading} text-white mb-2`}>
             Runs without friction.
           </h2>
-          <p className="max-w-md text-zinc-500 text-[10px] uppercase tracking-[0.15em] mx-auto leading-relaxed">
+          <p className={`${tokens.typeScale.body} max-w-md text-neutral-500 mx-auto leading-relaxed`}>
             Designed to operate quietly, autonomously, and reliably.
           </p>
         </div>

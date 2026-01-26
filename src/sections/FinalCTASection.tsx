@@ -1,5 +1,6 @@
 import { tokens } from '../styles/tokens'
 import Container from '../components/Container'
+import Button from '../components/ui/Button'
 
 const FinalCTASection = () => {
   return (
@@ -9,18 +10,16 @@ const FinalCTASection = () => {
           Start with one location.
         </h2>
         <div className="flex flex-col sm:flex-row gap-4 justify-center reveal-on-scroll delay-100">
-          <button
-            type="button"
-            className="bg-blue-600 text-white px-8 py-3 rounded-xl font-medium text-[10px] uppercase tracking-widest transition-transform hover:bg-blue-500 hover:scale-[1.02] shadow-[0_0_30px_rgba(37,99,235,0.4)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090b]"
+          <Button
+            variant="primary"
+            size="sm"
+            className="hover:scale-[1.02] shadow-[0_0_30px_rgba(37,99,235,0.4)]"
           >
             Get Pricing
-          </button>
-          <button
-            type="button"
-            className="bg-transparent text-zinc-400 border border-white/10 px-8 py-3 rounded-xl font-medium text-[10px] uppercase tracking-widest hover:border-white/30 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090b]"
-          >
+          </Button>
+          <Button variant="ghost" size="sm">
             Contact Sales
-          </button>
+          </Button>
         </div>
       </Container>
     </section>
